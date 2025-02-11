@@ -10,8 +10,6 @@ import Projects from './components/sections/Projects';
 import Contact from './components/sections/Contact';
 import Footer from "./components/sections/Footer";
 
-
-
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.text_primary};
@@ -34,21 +32,19 @@ const Wrapper = styled.div`
   }
 `;
 
-
-
 function App() {
   return (
-    <Router>{/* Use Router here */}
+    <Router basename="/My_Portfolio"> {Pramod99}
       <ThemeProvider theme={darkTheme}>
-        <Navbar/>
+        <Navbar />
         <Body>
           <Hero />
           <Skills />
-        <Projects />
-        <Wrapper>
-          <Contact />
-        </Wrapper>
-        <Footer />
+          <Projects />
+          <Wrapper>
+            <Contact />
+          </Wrapper>
+          <Footer />
         </Body>
       </ThemeProvider>
     </Router>
@@ -56,6 +52,3 @@ function App() {
 }
 
 export default App;
-
-
-
