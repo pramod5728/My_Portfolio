@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 
 function App() {
   return (
-    <Router basename="/My_Portfolio"> {Pramod99}
+    <Router basename="/My_Portfolio"> {/* Added basename for GitHub Pages */}
       <ThemeProvider theme={darkTheme}>
         <Navbar />
         <Body>
